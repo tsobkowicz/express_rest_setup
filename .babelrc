@@ -1,0 +1,13 @@
+{
+  "presets": [
+    ["@babel/env", {
+      "useBuiltIns": "usage", // alternative mode: "entry"
+      "corejs": 3 // default would be 2
+    }],
+    "@babel/typescript"],
+  "plugins": [
+    ["@babel/proposal-class-properties", { "loose": true }],
+    "@babel/proposal-object-rest-spread"
+  ],
+  "ignore": ["**/*.test.ts", "**/*.spec.ts", "**/*.d.ts"]
+}

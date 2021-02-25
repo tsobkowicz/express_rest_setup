@@ -1,0 +1,30 @@
+{
+  "extends": [
+    "airbnb-typescript/base",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:jest/recommended",
+    "plugin:security/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": [
+    "@typescript-eslint",
+    "security",
+    "jest"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "import/prefer-default-export": 0,
+    "@typescript-eslint/explicit-module-boundary-types": 0
+  },
+  "env": {
+    "es6": true,
+    "node": true,
+    "jest": true
+  },
+  "ignorePatterns": ["node_modules/", "dist/", "jest.config.js", "coverage/"]
+}
